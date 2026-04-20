@@ -1,0 +1,211 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                url("../img/coptic-culture-background.jpeg") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #2c3e50;
+    overflow-x: hidden;
+}
+.navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: rgba(0,0,0,0.9);
+  padding: 15px 30px;
+  border-bottom: 1px solid #f5d988;
+}
+
+
+.nav-left a {
+  color: #d4af37;           
+  border: 1px solid #d4af37; 
+  padding: 6px 18px;
+  margin-right: 10px;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+.nav-left a:hover {
+  background-color: #d4af37;
+  color: black;
+}
+
+.nav-center {
+  margin: auto;
+  color:#d4af37;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+
+
+.box {
+  width: 60%;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid gold;
+  border-radius: 15px;
+  background: rgba(0,0,0,0.6);
+  text-align: center;
+  color: #FFD700;
+}
+
+
+.buttons {
+  text-align: center;
+}
+
+.buttons button {
+  background: gold;
+  border: none;
+  padding: 15px 40px;
+  margin: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.buttons button:hover {
+  background: white;
+  transform: scale(1.05);
+}
+
+
+header {
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+header h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem); 
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    font-weight: 300;
+}
+
+
+.coptic-card {
+    background: rgba(255, 255, 255, 0.98);
+    max-width: 850px;
+    margin: -50px auto 60px;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    border-top: 6px solid #b38b4d;
+}
+
+.coptic-card h1 {
+    color: #b38b4d;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.coptic-card p {
+    line-height: 1.8;
+    font-size: 1.05rem;
+    color: #444;
+    text-align: center; 
+}
+
+
+.section-title {
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto 60px;
+    padding: 0 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+    height: 180px; 
+    object-fit: cover;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.card h3 {
+    margin: 15px 0 5px;
+    color: #b38b4d;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.card p {
+    padding: 0 20px 20px;
+    color: #666;
+    font-size: 0.9rem;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.artifact-link {
+    text-decoration: none;
+    display: block;
+    max-width: 800px;
+    margin: 0 auto 80px;
+    padding: 0 20px;
+}
+
+.artifact-banner {
+    position: relative;
+    height: 250px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    border: 3px solid rgba(179, 139, 77, 0.5);
+}
+
+.artifact-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.artifact-banner:hover img {
+    transform: scale(1.05);
+    filter: brightness(40%);
+}
+
+.overlay-text {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
